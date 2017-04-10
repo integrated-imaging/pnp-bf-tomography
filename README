@@ -1,0 +1,39 @@
+MBIR Code for Bright Field electron tomography with anomaly (Bragg) 
+modeling, dosage and noise parameter estimation
+
+Based on the paper:
+
+Singanallur V. Venkatakrishnan, Lawrence F.Drummy, Marc De Graef, P. 
+Jeff Simmons, Charles A. Bouman, "Model Based Iterative 
+Reconstruction for Bright Field Electron Tomography", SPIE Electronic Imaging 2013 
+[Note: A modified and more detailed version is currently 
+being submitted to the IEEE transactions on Image Processing]
+
+Before compiling code please read CmdlineREADME.txt
+in Source/ and install the relevant packages
+
+Directory Structure
+
+Data - A simulated data set of spheres
+Example - A shell script to use the data set in Data/
+         to reconstruct a small volume and write the results to 
+         Results/ folder
+Results - Folder containg the expected .rec files from 
+          running the script in example
+Source - Top level folder containing source C++ code
+
+Brief Instructions
+
+* Compiling needs cmake, boost, Intel TBB (and QT for the GUI).
+Read more in CmdlineREADME.txt in Source/ for instructions on compiling. 
+
+* After compiling cd into the Example folder and run the script
+
+* Compare the results of the run with the RefRecon.rec file to ensure
+the code is running correctly.
+
+For more details and precompiled binaries for Windows and MacOS visit 
+www.openmbir.org
+
+The code can also be accessed from the git repository 
+scm.bluequartz.net/OpenMBIR.git from the branch BFBraggTomo
